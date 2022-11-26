@@ -18,7 +18,7 @@ def watermarkWithPicture(oPic,wPic,size,scale):
    
       
 
-#Task1 Greyscale
+#Greyscale
 def greyP(wPic):
    pixels = getPixels(wPic)
 
@@ -32,7 +32,7 @@ def greyP(wPic):
     
     
 
-#Task2 Scaling
+#Scaling
 def scaleP(scale):
    width = getWidth(wPic)
    height = getHeight(wPic)
@@ -60,7 +60,7 @@ def scaleP(scale):
    
    
 
-#Task3 Blending
+#Blending
 def blendP(oPic, wPic, xstart, ystart, size):
 
    for x in range(0, getWidth(wPic)):
@@ -75,7 +75,7 @@ def blendP(oPic, wPic, xstart, ystart, size):
    show(oPic)
 
 
-#Task4 Luminance blending
+#Luminance blending
 def luminanceP(wPic):
 
    pixels = getPixels(wPic)
@@ -87,7 +87,7 @@ def luminanceP(wPic):
       setColor(pix, lum)
    show(wPic)
 
-#Task5 Text
+#Adding Text
 def textP():
    addText(pic,45,45,"WonJun Jo dom",red)
    addText(pic,60,60,"C3341243 C3313933 ",red)
